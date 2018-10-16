@@ -23,7 +23,7 @@ public class TreeViews {
 		         leftmap.put(level,h.data);
 		       }
 		
-		leftView(h.left, level-1);
+		leftView(h.left, level+1);
 		leftView(h.right, level+1);
 	    }
 		
@@ -62,7 +62,7 @@ public class TreeViews {
 				rightmap.put(level,h.data);
 		       }
 		
-			rightView(h.right, level-1);
+			rightView(h.right, level+1);
 			rightView(h.left, level+1);
 	    }
 		
