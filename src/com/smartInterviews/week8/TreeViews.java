@@ -77,10 +77,9 @@ public class TreeViews {
 		       {
 				if(level<minlevel)minlevel=level;
 				if(level>maxlevel)maxlevel=level;
-
-				bottommap.put(level,h.data);
+	
 		       }
-		
+		        bottommap.put(level,h.data);
 			bottomView(h.right, level-1);
 			bottomView(h.left, level+1);
 	    }
